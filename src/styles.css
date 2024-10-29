@@ -66,6 +66,7 @@ h6 {
 }
 
 body {
+  background: rgba(102, 51, 153, 0.502);
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -73,8 +74,34 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 h1 {
   margin-bottom: 10px;
+}
+
+input[type="text"] {
+  border-radius: 0.5rem;
+  border: none;
+  background-color: aliceblue;
+  width: 70%;
+  height: 50px;
+}
+
+button {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: aliceblue;
+  height: 50px;
+  width: 120px;
+}
+
+.input-section {
+  display: flex;
+  gap: 30px;
+  width: 30%;
+
+  justify-content: space-between;
+  align-items: center;
 }
 
 .infobox {
@@ -84,4 +111,24 @@ h1 {
   background-color: aliceblue;
   border-radius: 0.5rem;
   margin: 20px 0;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+
+  border-radius: 0.5rem;
+  padding: 0 20px;
+}
+
+.positive {
+  border: 2px solid green;
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
+.negative {
+  border: 2px solid red;
+  background-color: rgba(255, 0, 0, 0.5);
 }
